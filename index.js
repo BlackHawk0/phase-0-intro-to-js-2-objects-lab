@@ -3,8 +3,11 @@
 const employee = {name :'Sam', streetAddress : "L11 Broadway"};
 
 function updateEmployeeWithKeyAndValue(employee, key, value) {
-    const newEmp = {...employee, [key]: value};
-    return newEmp;
+    //const newEmp = {...employee, [key]: value};
+    return {
+        ...employee,
+        [key]: value
+    }
 }
 
 // updates `employee` with the given `key` and `value` (it is destructive) and returns the entire updated employee
